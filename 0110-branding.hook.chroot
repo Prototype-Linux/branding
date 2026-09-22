@@ -1,0 +1,32 @@
+#!/bin/sh
+set -e
+
+cat > /etc/os-release <<'EOF'
+NAME="Prototype Linux"
+PRETTY_NAME="Prototype Linux"
+ID=prototype
+ID_LIKE=debian
+VERSION="1.0"
+VERSION_ID="1.0"
+VERSION_CODENAME=stable
+HOME_URL="https://prototypelinux.pixelfucker.org/"
+SUPPORT_URL="https://github.com/Prototype-Linux/distro"
+BUG_REPORT_URL="https://github.com/Prototype-Linux/distro/issues"
+EOF
+
+ln -sf /etc/os-release /usr/lib/os-release
+
+cat > /etc/lsb-release <<'EOF'
+DISTRIB_ID=Prototype
+DISTRIB_RELEASE=1.0
+DISTRIB_CODENAME=stable
+DISTRIB_DESCRIPTION="Prototype Linux"
+EOF
+
+if [ -f /etc/default/grub ]; then
+  if grep -q '^GRUB_DISTRIBUTOR=' /etc/default/grub; then
+    sed -i 's|^GRUB_DISTRIBUTOR=.*|GRUB_DISTRIBUTOR="Prototype Linux"|' /etc/default/grub
+  else
+    echo 'GRUB_DISTRIBUTOR="Prototype Linux"' >> /etc/default/grub
+  fi
+fi

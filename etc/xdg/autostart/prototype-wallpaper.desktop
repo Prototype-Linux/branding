@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Prototype Wallpaper
+Exec=/usr/local/bin/prototype-set-wallpaper.sh
+NoDisplay=true
+X-GNOME-Autostart-enabled=true
