@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Install Prototype Linux
+Exec=sudo calamares
+Icon=calamares
+Terminal=false
+X-GNOME-Autostart-enabled=true
+NoDisplay=false

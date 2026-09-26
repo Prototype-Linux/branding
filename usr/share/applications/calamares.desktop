@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Install Prototype Linux
+Comment=Install Prototype Linux
+Exec=sudo calamares
+Icon=calamares
+Terminal=false
+StartupNotify=true
+Categories=System;
