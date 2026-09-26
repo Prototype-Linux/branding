@@ -1,3 +1,6 @@
 [submodule "etc/skel"]
 	path = etc/skel
 	url = https://github.com/Prototype-Linux/skel.git
+[submodule "etc/calamares"]
+	path = etc/calamares
+	url = https://github.com/Prototype-Linux/calamares
