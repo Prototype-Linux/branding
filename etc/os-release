@@ -1,0 +1,10 @@
+NAME="Prototype Linux"
+PRETTY_NAME="Prototype Linux"
+ID=prototype
+ID_LIKE=debian
+VERSION="1.0"
+VERSION_ID="1.0"
+VERSION_CODENAME=stable
+HOME_URL="https://prototypelinux.pixelfucker.org/"
+SUPPORT_URL="https://github.com/Prototype-Linux/distro"
+BUG_REPORT_URL="https://github.com/Prototype-Linux/distro/issues"
