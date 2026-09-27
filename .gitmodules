@@ -7,3 +7,6 @@
 [submodule "usr/share/backgrounds"]
 	path = usr/share/backgrounds
 	url = https://github.com/Prototype-Linux/backgrounds
+[submodule "usr/share/plymouth"]
+	path = usr/share/plymouth
+	url = https://github.com/Prototype-Linux/plymouth
