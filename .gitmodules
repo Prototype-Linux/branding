@@ -4,3 +4,6 @@
 [submodule "etc/calamares"]
 	path = etc/calamares
 	url = https://github.com/Prototype-Linux/calamares
+[submodule "usr/share/backgrounds"]
+	path = usr/share/backgrounds
+	url = https://github.com/Prototype-Linux/backgrounds
